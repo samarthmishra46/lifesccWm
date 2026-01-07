@@ -61,7 +61,7 @@ export function SubPrograms() {
                       />
                     </div>
                     <p className="font-semibold text-gray-900">Before</p>
-                    <p className="text-sm text-gray-600">Results after Lifescc Metabolic Reset Program<br />(actual client)</p>
+                    
                   </div>
                   <div className="text-center">
                     <div className="bg-gray-200 rounded-lg h-64 mb-2 overflow-hidden">
@@ -119,7 +119,7 @@ export function SubPrograms() {
                       />
                     </div>
                     <p className="font-semibold text-gray-900">Before</p>
-                    <p className="text-sm text-gray-600">Results after Lifescc Muscle Gain Program<br />(actual client)</p>
+                    
                   </div>
                   <div className="text-center">
                     <div className="bg-gray-200 rounded-lg h-64 mb-2 overflow-hidden">
