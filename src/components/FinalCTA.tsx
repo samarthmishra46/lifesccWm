@@ -1,0 +1,30 @@
+import { CTAForm } from './CTAForm';
+
+export function FinalCTA() {
+  return (
+    <section className="bg-white py-16 md:py-24">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'Georgia, serif' }}>
+            Your New Body Starts With a Single Decision
+          </h2>
+
+          <div className="text-xl md:text-2xl mb-12 space-y-4 leading-relaxed text-gray-800" style={{ fontFamily: 'Georgia, serif' }}>
+            <p>You&apos;ve waited long enough.</p>
+            <p>You deserve a body that feels strong, toned, energetic and confident.</p>
+            <p>LIFESCC gives you a transformation that stays with you for life.</p>
+            <p className="font-semibold text-gray-900">Start your personalised evaluation today.</p>
+          </div>
+
+          <div className="max-w-md mx-auto">
+            <CTAForm
+              sourceSection="final-cta"
+              buttonText="Begin My Journey"
+              variant="primary"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
