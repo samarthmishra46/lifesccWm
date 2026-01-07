@@ -3,28 +3,28 @@ import { ChevronDown } from 'lucide-react';
 
 const faqs = [
   {
-    question: 'What makes Lifescc different from other weight loss programs?',
-    answer: 'Lifescc focuses on both fat reduction and muscle building simultaneously under medical supervision. Unlike generic weight loss programs, we analyze your body composition, metabolism, and hormonal balance to create a personalized plan that delivers sustainable results.',
+    question: 'Will this make me lose muscle?',
+    answer: 'No. Our program is designed to protect and increase muscle mass while reducing fat.',
   },
   {
-    question: 'Is the body assessment really free?',
-    answer: 'Yes, the initial body assessment and consultation are completely free with no obligation to start any treatment. We want you to understand your body first and make an informed decision.',
+    question: 'Are treatments painful or surgical?',
+    answer: 'No. They are safe, comfortable and non-invasive with no downtime.',
   },
   {
-    question: 'How long does it take to see results?',
-    answer: 'Most clients start noticing changes in energy levels and body composition within 3-4 weeks. Visible fat reduction and muscle toning typically become apparent within 8-12 weeks, depending on individual body response and adherence to the program.',
+    question: 'How soon will I see results?',
+    answer: 'Many clients notice visible inch loss within 2 to 3 weeks.',
   },
   {
-    question: 'Do I need to follow a strict diet or workout plan?',
-    answer: 'Our approach is personalized and practical. We create plans that fit your lifestyle, not the other way around. While dietary guidance and movement recommendations are provided, they are designed to be sustainable and realistic for your daily routine.',
+    question: 'Do I need strict dieting?',
+    answer: 'No. Your plan is designed around your lifestyle. We promote realistic, sustainable habits.',
   },
   {
-    question: 'Is this program safe? Are there any side effects?',
-    answer: 'All Lifescc programs are medically supervised and designed with safety as the top priority. Your progress is monitored by trained doctors throughout the journey. Any recommendations are based on your individual health assessment.',
+    question: 'Will the results last?',
+    answer: 'Yes. Because the program focuses on metabolic correction and muscle gain, your fat-loss becomes sustainable.',
   },
   {
-    question: 'What happens after I complete the program?',
-    answer: 'Lifescc is designed to create lasting change in how your body functions. After completing your program, you receive maintenance guidance to help you sustain your results. Many clients continue with periodic check-ins to ensure long-term success.',
+    question: 'Is this suitable for people above 40?',
+    answer: 'Absolutely. In fact, people above 40 see tremendous benefits when metabolism and muscle strength are restored.',
   },
 ];
 
