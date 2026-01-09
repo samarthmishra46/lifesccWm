@@ -35,14 +35,14 @@ const steps = [
 
 export function WhatHappens() {
   return (
-    <section className="bg-white py-16 md:py-24">
-      <div className="container mx-auto px-4 md:px-6 lg:px-8">
+    <section className="bg-gradient-hero py-16 md:py-24">
+      <div className="section-container">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-text mb-6">
               What Happens After You Book an Appointment
             </h2>
-            <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-neutral-text-secondary max-w-3xl mx-auto">
               From your first visit, everything is guided by doctors and designed around your body, not generic weight-loss rules.
             </p>
           </div>
@@ -50,7 +50,7 @@ export function WhatHappens() {
           <div className="flex flex-wrap justify-center gap-8 mb-12">
             {steps.map((step) => (
               <div key={step.number} className="text-center w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)]">
-                <div className="w-48 h-48 bg-gradient-to-br from-green-100 to-green-50 rounded-lg mx-auto mb-6 overflow-hidden border-2 border-green-200">
+                <div className="w-48 h-48 bg-primary-100 rounded-card mx-auto mb-6 overflow-hidden border-2 border-primary-200">
                   <img 
                     src={step.image} 
                     alt={step.title}
@@ -58,14 +58,14 @@ export function WhatHappens() {
                   />
                 </div>
                 <div className="mb-4">
-                  <span className="inline-block w-10 h-10 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-lg mb-3">
+                  <span className="inline-flex items-center justify-center w-10 h-10 bg-primary-500 text-white rounded-full font-bold text-lg mb-3">
                     {step.number}
                   </span>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                  <h3 className="text-xl font-semibold text-neutral-text mb-2">
                     {step.title}
                   </h3>
                 </div>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-neutral-text-secondary leading-relaxed">
                   {step.description}
                 </p>
               </div>
@@ -73,7 +73,7 @@ export function WhatHappens() {
           </div>
 
           <div className="text-center mb-12">
-            <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+            <p className="text-lg text-neutral-text-secondary max-w-2xl mx-auto">
               There is no pressure to sign up or start treatment on the same day.
             </p>
           </div>

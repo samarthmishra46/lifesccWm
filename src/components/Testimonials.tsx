@@ -6,7 +6,7 @@ const testimonials = [
     name: 'Rajesh K.',
     age: 42,
     city: 'Bangalore',
-    rating: 5,
+    rating: 4,
     testimonial: 'I lost 18 kg and gained visible muscle definition. The doctors at Lifescc understood my body better than any gym trainer ever did. This is not just weight loss, it is a complete transformation.',
     beforeImage: 'https://via.placeholder.com/160x192/e5e7eb/6b7280?text=Before',
     afterImage: 'https://via.placeholder.com/160x192/e5e7eb/6b7280?text=After',
@@ -33,7 +33,7 @@ const testimonials = [
     name: 'Divya R.',
     age: 38,
     city: 'Coimbatore',
-    rating: 5,
+    rating: 4,
     testimonial: 'I was skeptical about another weight loss program, but the doctor-guided approach made all the difference. My body composition changed completely, and the results have stayed for over a year now.',
     beforeImage: 'https://via.placeholder.com/160x192/e5e7eb/6b7280?text=Before',
     afterImage: 'https://via.placeholder.com/160x192/e5e7eb/6b7280?text=After',
@@ -75,40 +75,40 @@ export function Testimonials() {
   const currentTestimonial = testimonials[currentIndex];
 
   return (
-    <section className="bg-white py-16 md:py-24">
-      <div className="container mx-auto px-4 md:px-6 lg:px-8">
+    <section className="bg-gradient-hero py-16 md:py-24">
+      <div className="section-container">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-text mb-4">
               Real People. Real Results.
             </h2>
           </div>
 
           <div className="relative">
             {/* Main Card */}
-            <div className="bg-gradient-to-br from-green-50 to-white rounded-3xl p-8 md:p-12 shadow-xl">
+            <div className="card bg-gradient-soft shadow-soft-lg">
               <div className="flex flex-col md:flex-row gap-8 items-start">
                 {/* Before/After Images */}
                 <div className="flex gap-6 mx-auto md:mx-0">
                   <div className="flex-shrink-0">
-                    <div className="w-32 h-40 md:w-40 md:h-48 bg-gradient-to-br from-gray-200 to-gray-100 rounded-xl overflow-hidden border-2 border-gray-300">
+                    <div className="w-32 h-40 md:w-40 md:h-48 bg-gradient-to-br from-neutral-border to-neutral-light rounded-xl overflow-hidden border-2 border-neutral-border">
                       <img 
                         src={currentTestimonial.beforeImage} 
                         alt={`${currentTestimonial.name} before`}
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <p className="text-sm text-gray-600 text-center mt-2 font-medium">Before</p>
+                    <p className="text-sm text-neutral-text-secondary text-center mt-2 font-medium">Before</p>
                   </div>
                   <div className="flex-shrink-0">
-                    <div className="w-32 h-40 md:w-40 md:h-48 bg-gradient-to-br from-gray-200 to-gray-100 rounded-xl overflow-hidden border-2 border-gray-300">
+                    <div className="w-32 h-40 md:w-40 md:h-48 bg-gradient-to-br from-neutral-border to-neutral-light rounded-xl overflow-hidden border-2 border-neutral-border">
                       <img 
                         src={currentTestimonial.afterImage} 
                         alt={`${currentTestimonial.name} after`}
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <p className="text-sm text-gray-600 text-center mt-2 font-medium">After</p>
+                    <p className="text-sm text-neutral-text-secondary text-center mt-2 font-medium">After</p>
                   </div>
                 </div>
 
@@ -116,19 +116,19 @@ export function Testimonials() {
                 <div className="flex-1">
                   <div className="flex mb-4">
                     {[...Array(currentTestimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
+                      <Star key={i} className="w-6 h-6 fill-[#ffff00] text-[#7d7d01]" />
                     ))}
                   </div>
 
-                  <p className="text-lg md:text-xl text-gray-800 mb-6 leading-relaxed italic">
+                  <p className="text-lg md:text-xl text-neutral-text mb-6 leading-relaxed italic">
                     "{currentTestimonial.testimonial}"
                   </p>
 
-                  <div className="border-t-2 border-green-200 pt-4">
-                    <p className="text-xl font-bold text-gray-900">
+                  <div className="border-t-2 border-primary-200 pt-4">
+                    <p className="text-xl font-bold text-neutral-text">
                       {currentTestimonial.name}, {currentTestimonial.age}
                     </p>
-                    <p className="text-gray-600">{currentTestimonial.city}</p>
+                    <p className="text-neutral-text-secondary">{currentTestimonial.city}</p>
                   </div>
                 </div>
               </div>
@@ -137,17 +137,17 @@ export function Testimonials() {
             {/* Navigation Arrows */}
             <button
               onClick={prevSlide}
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 bg-white rounded-full p-3 shadow-lg hover:bg-gray-50 transition-colors"
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 bg-white rounded-full p-3 shadow-soft hover:bg-neutral-light transition-colors"
               aria-label="Previous testimonial"
             >
-              <ChevronLeft className="w-6 h-6 text-gray-700" />
+              <ChevronLeft className="w-6 h-6 text-neutral-text-secondary" />
             </button>
             <button
               onClick={nextSlide}
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 bg-white rounded-full p-3 shadow-lg hover:bg-gray-50 transition-colors"
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 bg-white rounded-full p-3 shadow-soft hover:bg-neutral-light transition-colors"
               aria-label="Next testimonial"
             >
-              <ChevronRight className="w-6 h-6 text-gray-700" />
+              <ChevronRight className="w-6 h-6 text-neutral-text-secondary" />
             </button>
           </div>
 
@@ -159,8 +159,8 @@ export function Testimonials() {
                 onClick={() => goToSlide(index)}
                 className={`w-3 h-3 rounded-full transition-all ${
                   index === currentIndex
-                    ? 'bg-green-600 w-8'
-                    : 'bg-gray-300 hover:bg-gray-400'
+                    ? 'bg-primary-600 w-8'
+                    : 'bg-neutral-border hover:bg-neutral-text-secondary'
                 }`}
                 aria-label={`Go to testimonial ${index + 1}`}
               />

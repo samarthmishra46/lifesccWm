@@ -9,14 +9,14 @@ const painPoints = [
 
 export function PainPoints() {
   return (
-    <section className="bg-gray-50 py-16 md:py-24">
-      <div className="container mx-auto px-4 md:px-6 lg:px-8">
+    <section className="bg-neutral-light py-16 md:py-24">
+      <div className="section-container">
         <div className="max-w-4xl mx-auto">
           <div className="mb-8">
-            <p className="text-xl md:text-2xl text-gray-900 mb-6 leading-relaxed">
+            <p className="text-xl md:text-2xl text-neutral-text mb-6 leading-relaxed">
               Hi, I&apos;m [Name], founder of Lifescc.
             </p>
-            <p className="text-xl md:text-2xl text-gray-900 mb-8 leading-relaxed">
+            <p className="text-xl md:text-2xl text-neutral-text mb-8 leading-relaxed">
               And I&apos;d like to know...
             </p>
           </div>
@@ -25,21 +25,21 @@ export function PainPoints() {
             {painPoints.map((point, index) => (
               <div
                 key={index}
-                className="flex items-start gap-4 bg-white p-6 rounded-lg"
+                className="card flex items-start gap-4"
               >
-                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-teal-400 mt-1"></div>
-                <p className="text-lg md:text-xl text-gray-800 leading-relaxed">
+                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-accent-green mt-1"></div>
+                <p className="text-lg md:text-xl text-neutral-text-secondary leading-relaxed">
                   {point}
                 </p>
               </div>
             ))}
           </div>
 
-          <p className="text-xl md:text-2xl text-gray-900 text-center font-semibold mb-8">
+          <p className="text-xl md:text-2xl text-neutral-text text-center font-semibold mb-8">
             If that sounds familiar, you&apos;re not alone.
           </p>
 
-          <div className="text-center space-y-4 text-lg text-gray-700">
+          <div className="text-center space-y-4 text-lg text-neutral-text-secondary">
             <p>
               Most people who come to Lifescc have already tried everything they
               were told to do.{" "}
@@ -63,7 +63,7 @@ export function PainPoints() {
                 working after a point.
               </p>
             </div>
-            <p className="font-medium text-gray-900 text-xl md:text-2xl pt-4">
+            <p className="font-medium text-neutral-text text-xl md:text-2xl pt-4">
               You deserve a solution that understands your body not one that
               asks you to punish it.
             </p>
@@ -77,9 +77,9 @@ export function PainPoints() {
 export function LetterSection() {
   return (
     <section className="bg-white py-16 md:py-24">
-      <div className="container mx-auto px-4 md:px-6 lg:px-8">
+      <div className="section-container">
         <div className="max-w-3xl mx-auto">
-          <div className="space-y-6 text-lg md:text-xl text-gray-700 leading-relaxed">
+          <div className="space-y-6 text-lg md:text-xl text-neutral-text-secondary leading-relaxed">
             <p></p>
           </div>
         </div>
@@ -90,8 +90,8 @@ export function LetterSection() {
 
 export function AuthorityClose() {
   return (
-    <section className="bg-green-600 text-white py-16 md:py-20">
-      <div className="container mx-auto px-4 md:px-6 lg:px-8">
+    <section className="bg-gradient-to-br from-[#fff293] via-transparent to-[#fff7b9] text-white py-16 md:py-20">
+      <div className="section-container">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
             That&apos;s why we designed the Lifescc Weight Management System.

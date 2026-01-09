@@ -1,3 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-neutral-light text-neutral-text font-sans;
+    letter-spacing: -0.3px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold leading-tight text-neutral-text;
+    letter-spacing: -0.5px;
+  }
+
+  p {
+    @apply text-neutral-text-secondary;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-button font-semibold text-white bg-gradient-cta hover:bg-gradient-cta-hover transition-all duration-300 shadow-soft hover:shadow-soft-lg active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-button font-semibold text-primary-500 bg-white border-2 border-primary-500 hover:bg-primary-50 transition-all duration-300 shadow-soft;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-button font-semibold text-neutral-text border-2 border-neutral-border hover:bg-neutral-bg transition-all duration-300;
+  }
+
+  .card {
+    @apply bg-white rounded-card p-6 md:p-8 shadow-soft hover:shadow-soft-lg transition-shadow duration-300;
+  }
+
+  .card-elevated {
+    @apply card shadow-soft-md hover:shadow-soft-lg;
+  }
+
+  .section-container {
+    @apply px-4 md:px-6 lg:px-8 mx-auto max-w-7xl;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-500 to-primary-600 bg-clip-text text-transparent;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-input border-2 border-neutral-border bg-white text-neutral-text placeholder-neutral-text-secondary focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all duration-200 font-medium;
+  }
+}
